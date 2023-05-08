@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f6f8fa; */
 }
 
 code {
@@ -23,13 +24,17 @@ h6,
 p {
   margin: 0;
 }
+
 ul,
-ol {
+ol,
+li {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-img {
+
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */

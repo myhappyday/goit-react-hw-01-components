@@ -12,7 +12,8 @@ export const Item = styled.li`
   padding: 10px 15px;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  :hover {
+  :hover,
+  :focus {
     background-color: #f2f1f4;
   }
 `;

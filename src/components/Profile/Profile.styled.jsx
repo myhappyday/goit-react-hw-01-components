@@ -34,17 +34,22 @@ export const Tag = styled.p`
   cursor: pointer;
 `;
 
+export const Location = styled.p`
+  font-weight: 600;
+  color: #7b7b7b;
+`;
+
 export const Stats = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #f3f6f9;
-  border-top: 1px solid #e3e3e3;
+  background-color: #f2f1f4;
+  border-top: 1px solid #c1c1c1;
 `;
 
 export const Item = styled.li`
   padding: 15px 0;
   :not(:last-child) {
-    border-right: 1px solid #e3e3e3;
+    border-right: 1px solid #c1c1c1;
   }
 `;
 
@@ -53,4 +58,8 @@ export const Label = styled.span`
   display: block;
   font-weight: 700;
   margin-bottom: 5px;
+`;
+
+export const Quantity = styled.span`
+  font-weight: 600;
 `;

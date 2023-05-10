@@ -6,9 +6,11 @@ import {
   Avatar,
   Name,
   Tag,
+  Location,
   Stats,
   Item,
   Label,
+  Quantity,
 } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -18,54 +20,26 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <Avatar src={avatar} alt="User avatar" width="240" />
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
-        <p>{location}</p>
+        <Location>{location}</Location>
       </Description>
 
       <Stats>
         <Item>
           <Label>Followers</Label>
-          <span>{stats.followers}</span>
+          <Quantity>{stats.followers}</Quantity>
         </Item>
         <Item>
           <Label>Views</Label>
-          <span>{stats.views}</span>
+          <Quantity>{stats.views}</Quantity>
         </Item>
         <Item>
           <Label>Likes</Label>
-          <span>{stats.likes}</span>
+          <Quantity>{stats.likes}</Quantity>
         </Item>
       </Stats>
     </Wrapper>
   );
 };
-
-// export const Profile = ({ userName, tag, location, avatar, stats }) => {
-//   return (
-//     <Card>
-//       <Description>
-//         <Avatar src={avatar} alt="User avatar" width="240"/>
-//         <Name>{username}</Name>
-//         <Tag>@{tag}</Tag>
-//         <Location>{location}</Location>
-//       </Description>
-
-//       <Stats>
-//         <Item>
-//           <Label>Followers</Label>
-//           <Quantity>{stats.followers}</Quantity>
-//         </Item>
-//         <Item>
-//           <Label>Views</Label>
-//           <Quantity>{stats.views}</Quantity>
-//         </Item>
-//         <Item>
-//           <Label>Likes</Label>
-//           <Quantity>{stats.likes}</Quantity>
-//         </Item>
-//       </Stats>
-//     </Card>
-//   );
-// };
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,

@@ -18,7 +18,7 @@ export const Item = styled.li`
   }
 `;
 
-export const Status = styled.li`
+export const Status = styled.span`
   width: 20px;
   height: 20px;
   border-radius: 50%;
